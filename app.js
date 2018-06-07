@@ -28,11 +28,11 @@ const UsersController = require('./Controller/users')
 app.use('/api/users', UsersController)
 
 
-const PhotosController = require('./Controller/photos')
-app.use('/api/users/:userId/photos', PhotosController)
+const ArtController = require('./Controller/art')
+app.use('/api/users/:userId/art', ArtController)
 
-const WeighInController = require('./Controller/weighin')
-app.use('/api/users/:userId/weight', WeighInController)
+const CommentsController = require('./Controller/comments')
+app.use('/api/users/:userId/comments', CommentsController)
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {

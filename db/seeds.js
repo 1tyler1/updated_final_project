@@ -4,35 +4,35 @@ mongoose.connect(process.env.MONGODB_URI)
 mongoose.Promise = global.Promise
 
 
-const { User, Photo, Weight } = require('./schema')
+const { User, Art, Comment } = require('./schema')
 
-const Weigh_In1 = new Weight(
+const Comment2 = new Comment(
   {
-    weighIn: 200,
-    comment: 'Working on getting my weight down'
+    title: "New Comment 2",
+    comment: 'More Comments'
   }
 )
 
-const Weigh_In2 = new Weight(
+const Comment1 = new Comment(
   {
-    weighIn: 190,
-    comment: 'Getting my weight down'
+    title: "New Comment",
+    comment: 'Making comments'
   }
 )
 
-const Day_1 = new Photo({
-  title: 'Starting my weight loss journey',
-  description: "I'm excited about finally committing to making a change"
+const Artwork_2 = new Art({
+  title: 'First piece',
+  url: "https://i.imgur.com/cGB1SN8.jpg"
 })
-const Day_15 = new Photo({
-  title: 'Half way through',
-  description: "I can finally see the changes in my body!!"
+const Artwork_1 = new Art({
+  title: 'Second piece',
+  url: "https://i.imgur.com/NEwl2Wr.jpg"
 })
 const Tyler = new User({
   userName: 'Tyler_fr0st',
-  password: 'youllneverguess1',
-  photos: [Day_1, Day_15],
-  weight: [Weigh_In1, Weigh_In2]
+  email: 'tylerlaurendesigns@gmail.com',
+  art: [Artwork_1, Artwork_2],
+  comments: [Comment1, Comment2]
 })
 
 User.remove({})

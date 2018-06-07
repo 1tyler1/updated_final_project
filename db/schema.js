@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 
-// First, we instantiate a namespace for our Schema constructor defined by mongoose.
 const Schema = mongoose.Schema
 
-const WeightSchema = new Schema({
-  weighIn: {
-    type: Number,
+const CommentSchema = new Schema({
+  title: {
+    type: String,
     required: true
   },
   comment: {
@@ -14,21 +13,16 @@ const WeightSchema = new Schema({
   }
 })
 
-const PhotoSchema = new Schema({
+const ArtSchema = new Schema({
   title: {
     type: String,
     required: true,
     default: "New Title"
   },
-  description: {
+  url: {
     type: String,
     required: true,
-    default: "New Description"
-  },
-  created: {
-    type: String,
-    required: true,
-    default: new Date()
+    default: "New URL"
   }
 })
 
@@ -37,21 +31,21 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
-  password: {
+  email: {
     type: String,
     required: true
   },
-  photos: [PhotoSchema],
+  art: [ArtSchema],
   
-  weight: [WeightSchema]
+  comments: [CommentSchema]
 })
 
 // Create models for each schema
 const User = mongoose.model('User', UserSchema)
-const Photo = mongoose.model('Photo', PhotoSchema)
-const Weight = mongoose.model('Weight', WeightSchema)
+const Art = mongoose.model('Art', ArtSchema)
+const Comment = mongoose.model('Comment', CommentSchema)
 
 // Export each model so they can be required elsewhere
 module.exports = {
-  User, Photo, Weight
+  User, Art, Comment
 }
