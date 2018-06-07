@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
-class LoginPage extends Component {
+class LogInPage extends Component {
   state = {
     users: [],
     user: {
@@ -101,4 +101,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage
+export default LogInPage
