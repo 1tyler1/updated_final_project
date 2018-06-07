@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Weight extends Component {
+class CommentPage extends Component {
     render() {
         return (
             <div>
-               <h1>Weight-in</h1> 
+                Comments
             </div>
         );
     }
 }
 
-export default Weight;
+export default CommentPage;

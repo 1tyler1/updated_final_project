@@ -1,272 +1,31 @@
-            .flex {
-                display: flex;
-                align-self: center;
-            }
-            
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: grey;
-                color: white;
-                text-align: center;
-            }
-            
-            .update {
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                button {
-                    display: flex;
-                    align-items: center;
-                    font-size: 10px;
-                    width: 25%;
-                    height: 25%;
-                    text-align: center;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .button {
-                    display: flex;
-                    align-items: center;
-                    font-size: 10px;
-                    width: 25%;
-                    height: 25%;
-                    text-align: center;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .update {
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 15px;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .styleuserlinks {
-                    font-size: 15px;
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .footer {
-                    position: fixed;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    background-color: grey;
-                    color: white;
-                    text-align: center;
-                    height: 5px
-                }
-            }
-            
-            p.center {
-                font-size: 15px
-            }
-            
-            @media only screen and (max-width: 800px) {
-                #align,
-                {
-                    text-align: center;
-                    border-left: 80px;
-                    width: 100%;
-                }
-            }
-            
-            html {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-content: center;
-                justify-content: center;
-                position: relative;
-                background-image: url('https://i.imgur.com/40soOsj.jpg');
-            }
-            
-            .imagestyle {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            img {
-                width: 25%;
-            }
-            
-            .header {
-                font-size: 30px;
-            }
-            
-            .centered-card {
-                width: 500px;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .centered-card,
-                body {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .center {
-                    font-size: 12px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                }
-            }
-            
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .align-text {
-                    text-align: center;
-                    margin-left: 100px;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                img {
-                    width: 25%;
-                }
-            }
-            
-            h1 {
-                font-family: 'Pacifico', cursive;
-                font-weight: bolder;
-                color: rgb(7, 4, 28);
-                font-size: 100px;
-                margin: 0px;
-                padding: 35px;
-            }
-            
-            h3 {
-                font-family: 'Pacifico', cursive;
-                font-weight: bolder;
-                color: #2E4A62;
-                text-align: center;
-            }
-            
-            h6 {
-                text-align: center;
-            }
-            
-            p {
-                text-align: center;
-            }
-            
-            card-style {
-                width: 500 px;
-            }
-            
-            header-margin {
-                margin: 0px;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                h1,
-                body {
-                    width: inherit;
-                    font-size: 40px;
-                    text-align: center;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                p {
-                    width: 75%;
-                    height: 75%;
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                }
-            }
-            
-            .form {
-                background-color: powderblue;
-                opacity: 0.85;
-                color: rgb(7, 4, 28);
-                width: 500px;
-                height: 500px;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .form {
-                    background-color: powderblue;
-                    opacity: 0.90;
-                    color: rgb(7, 4, 28);
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
-            .align {
-                text-align: center;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .Link-style {
-                    font-size: 10px
-                }
-            }
-            
-            input {
-                text-align: center;
-            }
-            
-            .button {
-                display: flex;
-                align-self: center;
-                justify-content: center;
-            }
-            
-            @media only screen and (max-width: 800px) {
-                html {
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                div,
-                .centered-card,
-                .center,
-                {
-                    font-size: 30px;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%
-                }
-            }
-            
-            @media only screen and (max-width: 800px) {
-                .pmedia {
-                    font-size: 12px;
-                    text-align: center;
-                    padding-left: 90px;
-                }
-            }
+.centered {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+}
+
+.centered h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 100px;
+    width: 218px;
+    color: black;
+    margin: 5px;
+    text-align: center;
+    font-size: 75px;
+}
+
+.background {
+    background-color: #00A591;
+}
+
+.background-color {
+    background-color: #6B5B95;
+    padding-bottom: 200px;
+    text-align: center;
+}

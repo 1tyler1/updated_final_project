@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import UpdateUserFormPage from './UpdateUserFormPage';
 
-class ShowUserPage extends Component {
+class ShowUsers extends Component {
   state = {
     users: [],
     user: {
@@ -58,13 +58,13 @@ class ShowUserPage extends Component {
           
           <div class="center">
               
-                <Link class="waves-effect waves-light btn center-align btn-small center" to={`/user/${this.props.match.params.userId}/photos`}>
-                    Photos
+                <Link class="teal lighten-3 waves-effect waves-light btn center-align btn-small center" to={`/user/${this.props.match.params.userId}/comment`}>
+                    Comments
                 </Link>
               </div>
               <div class="center">
-                <Link class="waves-effect waves-light btn center-align btn-small center" to={`/users/${this.props.match.params.userId}/weight`}>
-                    Weight
+                <Link class="teal lighten-3 waves-effect waves-light btn center-align btn-small center" to={`/user/${this.props.match.params.userId}/art`}>
+                    Art
                 </Link>
              </div>
             </div>
@@ -88,4 +88,4 @@ class ShowUserPage extends Component {
   }
 }
 
-export default ShowUserPage;
+export default ShowUsers;
